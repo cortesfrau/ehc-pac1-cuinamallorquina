@@ -1,10 +1,11 @@
 module.exports = {
-  "gifsicle": { "optimizationLevel": 2,
+  "gifsicle": {
+    "optimizationLevel": 2,
     "interlaced": false,
     "colors": 10 },
   "mozjpeg": {
     "progressive": true,
-    "quality": 1
+    "quality": 5
   },
   "pngquant": {
     "quality": [0.25, 0.5]
@@ -16,6 +17,6 @@ module.exports = {
     ]
   },
   "webp": {
-    "quality": 1
+    "quality": 5
   }
 }
