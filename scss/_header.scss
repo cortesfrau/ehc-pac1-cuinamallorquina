@@ -14,7 +14,7 @@
 #site-title {
   color: $body-color;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 
   a {
     color: $dark;
@@ -24,6 +24,7 @@
 
 // Toggle
 .toggle {
+  @include no-select;
   padding: .5rem;
   cursor: pointer;
 
