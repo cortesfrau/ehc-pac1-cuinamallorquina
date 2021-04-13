@@ -56,6 +56,14 @@
 
 // Header Toggle
 #header-toggle {
+  z-index: 999;
+
+  &.opened {
+
+    span {
+      background: $white;
+    }
+  }
 
   @media only screen and (min-width: $media-lg) {
     display: none;
@@ -65,26 +73,33 @@
 
 // Mobile Nav
 #mobile-nav {
+  background: $white;
   position: fixed;
   top: 0;
   left: 0;
-  background: $primary;
   width: 60%;
   height: 100%;
   padding: 2rem;
   transform: translateX(-100%);
   transition: .5s;
+  z-index: 999;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
 
   .menu {
 
     li {
 
       a {
-        color: $white;
+        color: $gray;
         font-weight: $font-weight-bold;
         padding: 1rem 0;
         display: block;
-        font-size: $font-size-large;
+        font-size: 1.5rem;
+        line-height: $line-height-small;
+
+        &.active {
+          color: $dark;
+        }
       }
     }
   }
@@ -119,7 +134,7 @@
       transition: $transition;
 
       &:hover, &.active {
-        color: $body-color;
+        color: $dark;
       }
     }
   }
