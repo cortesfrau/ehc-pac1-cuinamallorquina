@@ -6,12 +6,3 @@
   background-image: -webkit-linear-gradient($from, $to);
   background-image: -o-linear-gradient($from, $to);
 }
-
-// No Select
-@mixin no-select {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
