@@ -1,0 +1,25 @@
+// HTML & Body
+html, body {
+  color: $body-color;
+  background: $body-bg;
+  font-size: $font-size-normal;
+  font-family: $font-family-normal;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-normal;
+  margin: 0;
+  padding: 0;
+}
+
+// Container
+.container {
+  display: block;
+  width: $container-width;
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+
+// Wrapper
+.wrapper {
+  padding-top: $wrapper;
+  padding-bottom: $wrapper;
+}
