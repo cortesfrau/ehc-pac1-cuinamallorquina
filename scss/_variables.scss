@@ -1,15 +1,22 @@
 // Colors
 $black: #111;
 $white: #fff;
-$dark: #444;
+$dark: #38393d;
 $light: #f5f5f5;
 $orange: #ff5722;
-$primary: $orange;
+$green: #4caf50;
+$primary: $green;
 $body-color: $black;
 $body-bg: $white;
 
 // Wrapper
 $wrapper: 3rem;
+
+// Media Breakdowns
+$media-md: 768px;
+$media-lg: 1024px;
+$media-xl: 1280px;
+$media-xxl: 1440px;
 
 // Container
 $container-width: 90%;
