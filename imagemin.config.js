@@ -6,7 +6,7 @@ module.exports = {
   },
   "mozjpeg": {
     "progressive": true,
-    "quality": 10
+    "quality": 50
   },
   "pngquant": {
     "quality": [0.25, 0.5]
@@ -18,6 +18,6 @@ module.exports = {
     ]
   },
   "webp": {
-    "quality": 10
+    "quality": 50
   }
 }
