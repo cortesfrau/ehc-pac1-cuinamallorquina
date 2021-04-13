@@ -1,7 +1,7 @@
 // Site Header
 #site-header {
-  background: $dark;
   padding: 1.25rem 0;
+  border-bottom: 1px solid $light;
 
   .container {
     display: flex;
@@ -12,9 +12,14 @@
 
 // Site Title
 #site-title {
-  color: $white;
+  color: $body-color;
   margin: 0;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+
+  a {
+    color: $dark;
+    text-decoration: none;
+  }
 }
 
 // Toggle
@@ -25,7 +30,7 @@
   span {
     width: 35px;
     height: 2px;
-    background: $white;
+    background: $dark;
     display: block;
     transition: all .5s;
 
@@ -107,31 +112,14 @@
 
     a {
       padding: 1rem;
-      color: $white;
+      color: $gray;
       font-size: $font-size-small;
       position: relative;
+      font-weight: $font-weight-bold;
+      transition: $transition;
 
-      &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        height: 2px;
-        width: calc(100% - 2rem);
-        opacity: 0;
-        background: $primary;
-        transform: translateY(.5rem);
-        transition: $transition;
-        bottom: .5rem;
-        left: 1rem;
-      }
-
-      &:hover {
-        color: $primary;
-
-        &:after {
-          opacity: 1;
-          transform: translateY(0);
-        }
+      &:hover, &.active {
+        color: $body-color;
       }
     }
   }
