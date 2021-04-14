@@ -1,7 +1,7 @@
 // Site Header
 #site-header {
   padding: 1.25rem 0;
-  border-bottom: 1px solid $light;
+  background: $dark;
 
   .container {
     display: flex;
@@ -12,12 +12,13 @@
 
 // Site Title
 #site-title {
-  color: $body-color;
+  color: $white;
   margin: 0;
   font-size: 1.6rem;
+  letter-spacing: 1px;
 
   a {
-    color: $dark;
+    color: $white;
     text-decoration: none;
   }
 }
@@ -30,7 +31,7 @@
   span {
     width: 35px;
     height: 2px;
-    background: $dark;
+    background: $white;
     display: block;
     transition: $transition;
 
@@ -57,13 +58,6 @@
 // Header Toggle
 #header-toggle {
   z-index: 999;
-
-  &.opened {
-
-    span {
-      background: $white;
-    }
-  }
 
   @media only screen and (min-width: $media-lg) {
     display: none;
@@ -133,7 +127,7 @@
       transition: $transition;
 
       &:hover, &.active {
-        color: $dark;
+        color: $white;
       }
     }
   }
