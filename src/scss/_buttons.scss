@@ -1,0 +1,20 @@
+// Buttons
+.button {
+  padding: 1rem 2rem;
+  background: $light;
+  color: $body-color;
+  border-radius: $border-radius;
+  transition: $transition;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $font-size-normal;
+
+  &:hover {
+    opacity: .75;
+  }
+
+  &-primary {
+    background: $primary;
+    color: $white;
+  }
+}

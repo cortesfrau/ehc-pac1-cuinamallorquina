@@ -23,6 +23,9 @@ $media-xxl: 1440px;
 $container-width: 90%;
 $container-max-width: 980px;
 
+// Gutters
+$gutters: 2rem;
+
 // Typo
 $font-size-normal: 1rem;
 $font-size-small: $font-size-normal * .9;
@@ -36,6 +39,7 @@ $font-weight-bold: 700;
 // Border
 $border-width: 1px;
 $border-radius: .25rem;
+$border-radius-lg: .5rem;
 
 // Line Height
 $line-height-normal: 1.5;
@@ -46,6 +50,7 @@ $line-height-large: 1.7;
 $paragraph-margin-bottom: 1.5rem;
 
 // Headings
+$headings-color: $body-color;
 $headings-font-family-: $font-family-serif;
 $headings-margin-bottom: 2.5rem;
 $headings-line-height: 1.2;

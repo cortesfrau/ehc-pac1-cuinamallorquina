@@ -1,39 +1,64 @@
 <!-- Header -->
-<include src="src/parts/header.html" locals='{
+<include src="src/parts/header.html">
+  {
     "page_title": "Cuina Mallorquina | La gastronomía de Mallorca",
     "page_desc": "Lloc web sobre la gastronomía de Mallorca"
-  }'>
+  }
 </include>
 
 <main class="container">
 
-  <section class="the-content wrapper">
+  <section class="wrapper">
 
-    <figure>
-      <img src="src/img/sobrasada.jpg" alt="Sobrassada de Mallorca">
-      <figcaption>Sobrassada de Mallorca</figcaption>
-    </figure>
+    <div class="content-preview-list">
 
-    <p>La <strong>gastronomia de Mallorca</strong> és el conjunt de receptes pròpies i ingredients típics de Mallorca (Balears, Espanya),
-      una illa gran dividida en tres parts: la serra de Tramuntana, la serra de Llevant i la plana entre aquestes dues. El cultiu
-      d'hortalisses i cereals i la cria de porcs a l'interior es complementa amb la pesca de la costa. Les matances són
-      molt importants a l'illa, ja que permeten aprofitar tot el porc en una varietat d'embotits i per descomptat també
-      en l'ensaïmada. L'illa Compta amb gran tradició fornera i pastissera, ja que des del segle XIV, es un dels
-      gremis més antics del país i, de fet, bona part de dels seus forns tenen més de 200 anys.
-      (<a target="_blank" href="https://es.wikipedia.org/wiki/Gastronom%C3%ADa_de_Mallorca">Extret de la Wikipedia</a>)</p>
+<!--      <include src="./src/parts/content-preview.html">-->
+<!--        {-->
+<!--          "img_src": "./src/img/frit-mallorqui.jpg",-->
+<!--          "title": "Plats mallorquins",-->
+<!--          "text": "Consulteu el nostre receptari tradicional mallorquí. Trobareu receptes tan conegudes com el frit mallorquí o les panades típiques de pasqua.",-->
+<!--          "button_link": "./plats-mallorquins.html",-->
+<!--          "button_text": "Veure més",-->
+<!--        }-->
+<!--      </include>-->
+
+      <div class="content-preview">
+        <img class="content-preview-img" src="src/img/frit-mallorqui.jpg" alt="Frit mallorquí">
+        <div class="content-preview-body">
+          <h2 class="content-preview-title">Plats mallorquins</h2>
+          <p class="content-preview-text">Consulteu el nostre receptari tradicional mallorquí. Trobareu receptes tan
+            conegudes com el frit mallorquí o les panades típiques de pasqua.</p>
+          <a class="content-preview-button" href="./plats-mallorquins.html">Veure més</a>
+        </div>
+      </div>
+
+      <div class="content-preview">
+        <img class="content-preview-img" src="src/img/frit-mallorqui.jpg" alt="Frit mallorquí">
+        <div class="content-preview-body">
+          <h2 class="content-preview-title">Qui som</h2>
+          <p class="content-preview-text">Coneixeu la nostra associació per la preservació de la cultura gastronòmica
+            mallorquina. Us brindem un breu recorregut per la nostra història.</p>
+          <a class="content-preview-button" href="./qui-som.html">Veure més</a>
+        </div>
+      </div>
+
+      <div class="content-preview">
+        <img class="content-preview-img" src="src/img/frit-mallorqui.jpg" alt="Frit mallorquí">
+        <div class="content-preview-body">
+          <h2 class="content-preview-title">Enllaços</h2>
+          <p class="content-preview-text">En aquest apartat trobareu els enllaços a les fonts originals de tots els
+            continguts (gràfics i textuals) que s'han utilitzat en aquest lloc web.</p>
+          <a class="content-preview-button" href="./enllacos.html">Veure més</a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
 
   </section>
-
-  <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus porta eros vel sem imperdiet lacinia. Fusce
-    sagittis tempor tellus, ac consequat augue scelerisque a. Phasellus pharetra malesuada arcu, at ultricies nunc
-    vestibulum eget. Donec porttitor porttitor fringilla. Nulla in orci tempor, blandit ex vel, pharetra purus.
-    Suspendisse accumsan, lectus ut convallis sollicitudin, justo felis finibus magna, eu elementum ipsum eros nec
-    turpis. Suspendisse potenti. Curabitur massa mi, sodales ac aliquet a, cursus eget purus.</p>
-
-  <p>Etiam ultricies fermentum mi, eget vulputate libero rhoncus vestibulum. Phasellus consequat lacinia diam, ac
-    gravida enim eleifend vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-    curae; In diam risus, hendrerit nec gravida sed, bibendum in odio. Nulla facilisi. Mauris congue lobortis justo,
-    et condimentum neque feugiat tempor. Aenean at nisl tempor, ullamcorper nulla eget, ullamcorper velit.</p>
 
 </main>
 

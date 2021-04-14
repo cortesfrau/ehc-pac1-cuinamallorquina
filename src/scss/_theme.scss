@@ -1,0 +1,60 @@
+// Content Preview
+.content-preview {
+  padding: 2rem;
+  border-radius: $border-radius;
+  border: $border-width solid $light;
+  margin-bottom: $wrapper;
+
+  &-img {
+    margin: 0 auto 1rem auto;
+  }
+
+  &-title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 0;
+  }
+
+  &-button {
+    @extend .button, .button-primary;
+    display: block;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: $media-md) {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:nth-child(even) {
+
+      .content-preview-img {
+        order: 1;
+        margin-right: 0;
+        margin-left: $gutters * .5;
+      }
+
+      .content-preview-body {
+        order: 0;
+        margin-left: 0;
+        margin-right: $gutters * .5;
+        text-align: right;
+      }
+    }
+
+    &-img {
+      width: 50%;
+      margin-right: $gutters * .5;
+      margin-bottom: 0;
+    }
+
+    &-body {
+      width: 50%;
+      margin-left: $gutters * .5;
+    }
+
+    &-button {
+      display: inline-block;
+    }
+  }
+}
