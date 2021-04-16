@@ -1,17 +1,19 @@
 // Colors
-$black: #111;
+$black: #111111;
 $white: #fff;
 $gray: #9fa2af;
-$dark: #38393d;
-$light: #e7e8ec;
+$dark: #2a3046;
+$light: #f2f2f5;
 $orange: #ff5722;
 $green: #4caf50;
-$primary: $green;
-$body-color: $black;
+$blue: #2196f3;
+$primary: $blue;
+$body-color: $dark;
 $body-bg: $white;
 
 // Wrapper
 $wrapper: 3rem;
+$wrapper-large: $wrapper * 1.5;
 
 // Media Breakdowns
 $media-md: 768px;
@@ -24,7 +26,7 @@ $container-width: 90%;
 $container-max-width: 980px;
 
 // Gutters
-$gutters: 2rem;
+$gutters: 2.5rem;
 
 // Typo
 $font-size-normal: 1rem;
@@ -52,7 +54,7 @@ $paragraph-margin-bottom: 1.5rem;
 // Headings
 $headings-color: $body-color;
 $headings-font-family-: $font-family-serif;
-$headings-margin-bottom: 2.5rem;
+$headings-margin-bottom: 2rem;
 $headings-line-height: 1.2;
 $h1-font-size: $font-size-normal * 3.5;
 $h2-font-size: $font-size-normal * 2.75;

@@ -17,4 +17,24 @@
     background: $primary;
     color: $white;
   }
+
+  &-disabled {
+    background-color: $gray;
+    color: $light;
+    cursor: default;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &-small {
+    padding: .5rem 1rem;
+    font-size: $font-size-small;
+  }
+
+  &-block {
+    display: block;
+    text-align: center;
+  }
 }

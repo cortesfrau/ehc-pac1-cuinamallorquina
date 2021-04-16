@@ -2,7 +2,7 @@
 .content-preview {
   padding: 2rem;
   border-radius: $border-radius;
-  border: $border-width solid $light;
+  background-color: $light;
   margin-bottom: $wrapper;
 
   &-img {
@@ -10,7 +10,6 @@
   }
 
   &-title {
-    font-size: 2.5rem;
     margin: 0 0 1.5rem 0;
   }
 
@@ -55,6 +54,113 @@
 
     &-button {
       display: inline-block;
+    }
+  }
+}
+
+// Recipe Archive
+#recipe-archive {
+  display: flex;
+  flex-flow: row wrap;
+  margin: -$gutters/2;
+}
+
+// Recipe Preview
+.recipe-preview {
+  background-color: $light;
+  margin-bottom: $wrapper;
+  border-radius: $border-radius;
+  height: 100%;
+
+  &-img {
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+  }
+
+  &-content {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    font-size: $font-size-small;
+  }
+
+  &-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &-button {
+    @extend .button, .button-primary, .button-block;
+  }
+
+  @media only screen and (min-width: $media-md) {
+    margin: $gutters/2;
+    flex-grow: 1;
+    width: calc(50% - #{$gutters*2});
+  }
+
+  @media only screen and (min-width: $media-xl) {
+    margin: $gutters/2;
+    flex-grow: 1;
+    width: calc(33% - #{$gutters*3});
+  }
+}
+
+// Page Header
+.page-header {
+  padding: $wrapper 0;
+  background-color: $light;
+  text-align: center;
+
+  .page-title {
+    margin: 0;
+  }
+}
+
+// Recipe
+.recipe {
+  padding: 1.5rem;
+  background-color: $light;
+  margin: 0 auto;
+
+  &-header {
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $gray;
+
+    &-img {
+      margin-bottom: 1.5rem;
+    }
+
+    &-content {
+
+      h1 {
+        font-size: 2.25rem;
+      }
+    }
+  }
+
+  &-section-title {
+    font-size: 1.75rem;
+  }
+
+  @media only screen and (min-width: $media-md) {
+
+    &-header {
+      display: flex;
+      flex-direction: row;
+
+      &-img {
+        order: 1;
+        margin-bottom: 0;
+        margin-left: $gutters/2;
+        margin-top: 1rem;
+        width: calc(45% - #{$gutters/2});
+      }
+
+      &-content {
+        order: 0;
+        margin-right: $gutters/2;
+        width: calc(55% - #{$gutters/2});
+      }
     }
   }
 }

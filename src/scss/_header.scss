@@ -20,6 +20,14 @@
   a {
     color: $white;
     text-decoration: none;
+    transition: $transition;
+  }
+
+  &:hover {
+
+    a {
+      color: $primary;
+    }
   }
 }
 

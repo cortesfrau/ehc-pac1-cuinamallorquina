@@ -15,11 +15,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weight-bold;
   line-height: $headings-line-height;
 }
-h1 { font-size: 3.25rem; }
-h2 { font-size: 2.75rem; }
-h3 { font-size: 2.25rem; }
-h4 { font-size: 1.75rem; }
-h5 { font-size: 1.25rem; }
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.40rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.2rem; }
 h6 { font-size: 1rem; }
 
 // Links
@@ -29,4 +29,12 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+
+// Font Sizes
+.font-size-small {
+  font-size: $font-size-small;
+}
+.font-size-large {
+  font-size: $font-size-large;
 }
