@@ -62,7 +62,10 @@
 #recipe-archive {
   display: flex;
   flex-flow: row wrap;
-  margin: -$gutters/2;
+
+  @media only screen and (min-width: $media-md) {
+    margin: -$gutters/2;
+  }
 }
 
 // Recipe Preview
@@ -93,14 +96,12 @@
 
   @media only screen and (min-width: $media-md) {
     margin: $gutters/2;
-    flex-grow: 1;
-    width: calc(50% - #{$gutters*2});
+    //flex-grow: 1;
+    width: calc(50% - #{$gutters});
   }
 
   @media only screen and (min-width: $media-xl) {
-    margin: $gutters/2;
-    flex-grow: 1;
-    width: calc(33% - #{$gutters*3});
+    width: calc(33% - #{$gutters});
   }
 }
 

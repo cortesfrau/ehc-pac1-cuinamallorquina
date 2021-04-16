@@ -17,73 +17,84 @@
 
   <section class="wrapper">
     <div class="container">
-
       <div id="recipe-archive">
-        
-        <div class="recipe-preview">
-          <img class="recipe-preview-img" src="src/img/ensaimada.jpg" alt="Ensaïmada Mallorquina">
-          <div class="recipe-preview-content">
-            <h2 class="recipe-preview-title">Ensaïmada</h2>
-            <p class="recipe-preview-summary">Apren a fer la típica ensaïmada mallorquina. Un plat de la rebosteria
-              tradicional amb gairebé 500 anys d'història.</p>
-            <a class="recipe-preview-button" href="./ensaimada.html">Veure recepta</a>
-          </div>
-        </div>
 
-        <div class="recipe-preview">
-          <img class="recipe-preview-img" src="src/img/frit-mallorqui.jpg" alt="Ensaïmada Mallorquina">
-          <div class="recipe-preview-content">
-            <h2 class="recipe-preview-title">Frit</h2>
-            <p class="recipe-preview-summary">Nullam a libero ac augue aliquam lobortis at vel dui. Sed a maximus
-              leo, eget interdum erat. Praesent venenatis.</p>
-            <a class="button button-block button-disabled" href="">No disponible</a>
-          </div>
-        </div>
+        <include src="src/parts/recipe-item.html">
+          {
+          "recipe_title": "Ensaïmada",
+          "image_src": "src/img/ensaimada.jpg",
+          "image_alt": "Ensaïmada",
+          "recipe_summary": "Apren a fer la típica ensaïmada mallorquina. Un plat de la rebosteria tradicional amb gairebé 500 anys d'història.",
+          "button_url": "./ensaimada.html",
+          "button_text": "Veure recepta",
+          "button_class": "recipe-preview-button"
+          }
+        </include>
 
-        <div class="recipe-preview">
-          <img class="recipe-preview-img" src="src/img/tumbet.jpg" alt="Ensaïmada Mallorquina">
-          <div class="recipe-preview-content">
-            <h2 class="recipe-preview-title">Tumbet</h2>
-            <p class="recipe-preview-summary">Nullam a libero ac augue aliquam lobortis at vel dui. Sed a maximus
-              leo, eget interdum erat. Praesent venenatis.</p>
-            <a class="button button-block button-disabled" href="">No disponible</a>
-          </div>
-        </div>
+        <include src="src/parts/recipe-item.html">
+          {
+          "recipe_title": "Frit",
+          "image_src": "src/img/frit-mallorqui.jpg",
+          "image_alt": "Frit",
+          "recipe_summary": "Nullam a libero ac augue aliquam lobortis at vel dui. Sed a maximus leo, eget interdum erat. Praesent venenatis.",
+          "button_url": "",
+          "button_text": "No disponible",
+          "button_class": "button button-block button-disabled"
+          }
+        </include>
 
-        <div class="recipe-preview">
-          <img class="recipe-preview-img" src="src/img/coca-trempo.jpg" alt="Ensaïmada Mallorquina">
-          <div class="recipe-preview-content">
-            <h2 class="recipe-preview-title">Coca de trempó</h2>
-            <p class="recipe-preview-summary">Nullam a libero ac augue aliquam lobortis at vel dui. Sed a maximus
-              leo, eget interdum erat. Praesent venenatis.</p>
-            <a class="button button-block button-disabled" href="">No disponible</a>
-          </div>
-        </div>
+        <include src="src/parts/recipe-item.html">
+          {
+          "recipe_title": "Tumbet",
+          "image_src": "src/img/tumbet.jpg",
+          "image_alt": "Tumbet",
+          "recipe_summary": "Nullam a libero ac augue aliquam lobortis at vel dui. Sed a maximus leo, eget interdum erat. Praesent venenatis.",
+          "button_url": "",
+          "button_text": "No disponible",
+          "button_class": "button button-block button-disabled"
+          }
+        </include>
 
-        <div class="recipe-preview">
-          <img class="recipe-preview-img" src="src/img/panades.jpg" alt="Ensaïmada Mallorquina">
-          <div class="recipe-preview-content">
-            <h2 class="recipe-preview-title">Panades</h2>
-            <p class="recipe-preview-summary">Nullam a libero ac augue aliquam lobortis at vel dui. Sed a maximus
-              leo, eget interdum erat. Praesent venenatis.</p>
-            <a class="button button-block button-disabled" href="">No disponible</a>
-          </div>
-        </div>
+        <include src="src/parts/recipe-item.html">
+          {
+          "recipe_title": "Coca de trempó",
+          "image_src": "src/img/coca-trempo.jpg",
+          "image_alt": "Coca de trempó",
+          "recipe_summary": "Nullam a libero ac augue aliquam lobortis at vel dui. Sed a maximus leo, eget interdum erat. Praesent venenatis.",
+          "button_url": "",
+          "button_text": "No disponible",
+          "button_class": "button button-block button-disabled"
+          }
+        </include>
 
-        <div class="recipe-preview">
-          <img class="recipe-preview-img" src="src/img/cocarrois.jpg" alt="Ensaïmada Mallorquina">
-          <div class="recipe-preview-content">
-            <h2 class="recipe-preview-title">Cocarrois</h2>
-            <p class="recipe-preview-summary">Nullam a libero ac augue aliquam lobortis at vel dui. Sed a maximus
-              leo, eget interdum erat. Praesent venenatis.</p>
-            <a class="button button-block button-disabled" href="">No disponible</a>
-          </div>
-        </div>
-        
+        <include src="src/parts/recipe-item.html">
+          {
+          "recipe_title": "Panades",
+          "image_src": "src/img/panades.jpg",
+          "image_alt": "Panades",
+          "recipe_summary": "Nullam a libero ac augue aliquam lobortis at vel dui. Sed a maximus leo, eget interdum erat. Praesent venenatis.",
+          "button_url": "",
+          "button_text": "No disponible",
+          "button_class": "button button-block button-disabled"
+          }
+        </include>
+
+        <include src="src/parts/recipe-item.html">
+          {
+          "recipe_title": "Cocarrois",
+          "image_src": "src/img/cocarrois.jpg",
+          "image_alt": "Cocarrois",
+          "recipe_summary": "Nullam a libero ac augue aliquam lobortis at vel dui. Sed a maximus leo, eget interdum erat. Praesent venenatis.",
+          "button_url": "",
+          "button_text": "No disponible",
+          "button_class": "button button-block button-disabled"
+          }
+        </include>
+
       </div>
-      
     </div>
   </section>
+
 </main>
 
 <!-- Footer -->
